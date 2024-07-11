@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/MaracaraCarlos/Calculator-Theme)
 - Live Site URL: [Netlify](https://app.netlify.com/sites/calculator-theme-cems/configuration/general)
 
 ## My process
