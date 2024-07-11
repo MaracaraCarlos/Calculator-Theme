@@ -24,11 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
+![image](https://github.com/user-attachments/assets/5f44a8db-492b-44e1-920f-f17a8e77ca71)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://app.netlify.com/sites/calculator-theme-cems/configuration/general)
 
 ## My process
 
