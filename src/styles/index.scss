@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+/* Colors */
+/* THEME 1 */
+/* Backgrounds */
+$Very-dark-desaturated-blue-main-background: #3a4764;
+$Very-dark-desaturated-blue-toggle-background-keypad-background: #232c43;
+$Very-dark-desaturated-blue-screen-background: #182034;
+/* Keys */
+$Desaturated-dark-blue-key-background: #637097;
+$Desaturated-dark-blue-key-shadow: #404e72;
+$Red-key-background-toggle: #d03f2f;
+$Dark-red-key-shadow: #93261a;
+$Light-grayish-orange-key-background: #eae3dc;
+$Grayish-orange-key-shadow: #b4a597;
+/* Text */
+$Very-dark-grayish-blue: #444b5a;
+$White: #ffffff;
+/* THEME 2 */
+/* Backgrounds */
+$Light-gray-main-background: #e6e6e6;
+$Grayish-red-toggle-background-keypad-background: #d1cccc;
+$Very-light-gray-screen-background: #ededed;
+/* Keys */
+$Dark-moderate-cyan-key-background: #377f86;
+$Very-dark-cyan-key-shadow: #1b5f65;
+$Orange-key-background-toggle: #ca5502;
+$Dark-orange-key-shadow: #893901;
+$Light-grayish-yellow-key-background: #e5e4e1;
+$Dark-grayish-orange-key-shadow: #a69d91;
+/* Text */
+$Very-dark-grayish-yellow: #35352c;
+$White-text: #ffffff;
+/* THEME 3 */
+/* Backgrounds */
+$Very-dark-violet-main-background: #160628;
+$Very-dark-violet-toggle-background-keypad-background-screen: #1d0934;
+/* Keys */
+$Dark-violet-key-background: #58077d;
+$Vivid-magenta-key-shadow: #bc15f4;
+$Pure-cyan-key-background-toggle: #00e0d1;
+$Soft-cyan-key-shadow: #6cf9f2;
+$Very-dark-violet-key-background: #341c4f;
+$Dark-magenta-key-shadow: #871c9c;
+/* Text */
+$Light-yellow: #ffe53d;
+$Very-dark-blue: #1b2428;
+$White-text: #ffffff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.fake_body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Body Theme */
+.body__theme1 {
+  background-color: $Very-dark-desaturated-blue-main-background;
+}
+.body__theme2 {
+  background-color: $Light-gray-main-background;
+}
+.body__theme3 {
+  background-color: $Very-dark-violet-main-background;
+}
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  .header_title {
+    font-size: 1rem;
+  }
+  .theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .theme_title {
+      font-size: .5rem;
+      letter-spacing: .1rem;
+    }
+    .switch {
+      border-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input {
+        display: none;
+      }
+    }
+  }
+}
+.button_radio {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  .span {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background: #eeeeee;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: ease .3s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+.one .button_radio .span {
+  background-color: $Very-dark-desaturated-blue-toggle-background-keypad-background;
+}
+.two .button_radio .span {
+  background-color: $Grayish-red-toggle-background-keypad-background;
+}
+.three .button_radio .span {
+  background-color: $Dark-violet-key-background;
+}
+/* Header Theme */
+.header_theme1 {
+  color: $White;
+}
+.header_theme2 {
+  color: $Very-dark-grayish-yellow;
+}
+.header_theme3 {
+  color: $Light-yellow;
+}
+.input_container {
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-inline: 15px;
+  
+  .result {
+    font-size: 1.5rem;
+  }
+  .input {
+    font-size: 1.5rem;
+  }
+}
+/* Screen Theme */
+.screen__theme1 {
+  background-color: $Very-dark-desaturated-blue-screen-background;
+  color: $White;
+}
+.screen__theme2 {
+  background-color: $Very-light-gray-screen-background;
+  color: $Very-dark-grayish-yellow;
+}
+.screen__theme3 {
+  background-color: $Very-dark-violet-toggle-background-keypad-background-screen;
+  color: $Light-yellow;
+}
+.board {
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .board__row {
+    display: flex;
+    gap: 15px;
+  }
+}
+/* Board Theme */
+.board__theme1 {
+  background-color: $Very-dark-desaturated-blue-toggle-background-keypad-background;
+}
+.board__theme2 {
+  background-color: $Grayish-red-toggle-background-keypad-background;
+}
+.board__theme3 {
+  background-color: $Very-dark-violet-toggle-background-keypad-background-screen;
+}
+button {
+  flex: 1 1 0;
+  height: 62px;
+  padding-top: 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* Buttons */
+.btns__theme1 {
+  color: $Very-dark-grayish-blue;
+  background-color: $Light-grayish-orange-key-background;
+  box-shadow: 0px 3px 1px $Grayish-orange-key-shadow;
+  &:hover {
+    background-color: #f7f5f3;
+  }
+}
+.btns__theme2 {
+  color: $Very-dark-grayish-yellow;
+  background-color: $Light-grayish-yellow-key-background;
+  box-shadow: 0px 3px 1px $Dark-grayish-orange-key-shadow;
+  &:hover {
+    background-color: #f5f4f3;
+  }
+}
+.btns__theme3 {
+  color: $Light-yellow;
+  background-color: $Very-dark-violet-key-background;
+  box-shadow: 0px 3px 1px $Dark-magenta-key-shadow;
+  &:hover {
+    background-color: #5a3881;
+  }
+}
+/* Delete Theme */
+.clear__btn-theme1,
+.delete__btn-theme1 {
+  color: $White;
+  background-color: $Desaturated-dark-blue-key-background;
+  box-shadow: 0px 3px 1px $Desaturated-dark-blue-key-shadow;
+  &:hover {
+    background-color: #7f8ebd;
+  }
+}
+.clear__btn-theme2,
+.delete__btn-theme2 {
+  color: $White;
+  background-color: $Dark-moderate-cyan-key-background;
+  box-shadow: 0px 3px 1px $Very-dark-cyan-key-shadow;
+  &:hover {
+    background-color: #48a2aa;
+  }
+}
+.clear__btn-theme3,
+.delete__btn-theme3 {
+  color: $White;
+  background-color: $Dark-violet-key-background;
+  box-shadow: 0px 3px 1px $Vivid-magenta-key-shadow;
+  &:hover {
+    background-color: #7916a7;
+  }
+}
+/* Equals theme */
+.equal__btn-theme1 {
+  color: $White;
+  background-color: $Red-key-background-toggle;
+  box-shadow: 0px 3px 1px $Dark-red-key-shadow;
+  &:hover {
+    background-color: #e95140;
+  }
+}
+.equal__btn-theme2 {
+  color: $White;
+  background-color: $Orange-key-background-toggle;
+  box-shadow: 0px 3px 1px $Dark-orange-key-shadow;
+  &:hover {
+    background-color: #e2701f;
+  }
+}
+.equal__btn-theme3 {
+  color: $Very-dark-blue;
+  background-color: $Pure-cyan-key-background-toggle;
+  box-shadow: 0px 3px 1px $Soft-cyan-key-shadow;
+  &:hover {
+    background-color: #23f3e5;
+  }
+}
+@media (width <= 530px) {
+  .container {
+    min-width: 350px;
+    margin-inline: 10px;
+  }
+}

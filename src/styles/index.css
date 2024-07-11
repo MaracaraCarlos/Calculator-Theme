@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+/* Colors */
+/* THEME 1 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+/* THEME 2 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+/* THEME 3 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fake_body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Body Theme */
+.body__theme1 {
+  background-color: #3a4764;
+}
+
+.body__theme2 {
+  background-color: #e6e6e6;
+}
+
+.body__theme3 {
+  background-color: #160628;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header_title {
+  font-size: 1rem;
+}
+.header .theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header .theme .theme_title {
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+.header .theme .switch {
+  border-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .theme .switch input {
+  display: none;
+}
+
+.button_radio {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.button_radio .span {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background: #eeeeee;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: ease 0.3s;
+}
+.button_radio .span:hover {
+  scale: 1.1;
+}
+
+.one .button_radio .span {
+  background-color: #232c43;
+}
+
+.two .button_radio .span {
+  background-color: #d1cccc;
+}
+
+.three .button_radio .span {
+  background-color: #58077d;
+}
+
+/* Header Theme */
+.header_theme1 {
+  color: #ffffff;
+}
+
+.header_theme2 {
+  color: #35352c;
+}
+
+.header_theme3 {
+  color: #ffe53d;
+}
+
+.input_container {
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-inline: 15px;
+}
+.input_container .result {
+  font-size: 1.5rem;
+}
+.input_container .input {
+  font-size: 1.5rem;
+}
+
+/* Screen Theme */
+.screen__theme1 {
+  background-color: #182034;
+  color: #ffffff;
+}
+
+.screen__theme2 {
+  background-color: #ededed;
+  color: #35352c;
+}
+
+.screen__theme3 {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+.board {
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.board .board__row {
+  display: flex;
+  gap: 15px;
+}
+
+/* Board Theme */
+.board__theme1 {
+  background-color: #232c43;
+}
+
+.board__theme2 {
+  background-color: #d1cccc;
+}
+
+.board__theme3 {
+  background-color: #1d0934;
+}
+
+button {
+  flex: 1 1 0;
+  height: 62px;
+  padding-top: 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Buttons */
+.btns__theme1 {
+  color: #444b5a;
+  background-color: #eae3dc;
+  box-shadow: 0px 3px 1px #b4a597;
+}
+.btns__theme1:hover {
+  background-color: #f7f5f3;
+}
+
+.btns__theme2 {
+  color: #35352c;
+  background-color: #e5e4e1;
+  box-shadow: 0px 3px 1px #a69d91;
+}
+.btns__theme2:hover {
+  background-color: #f5f4f3;
+}
+
+.btns__theme3 {
+  color: #ffe53d;
+  background-color: #341c4f;
+  box-shadow: 0px 3px 1px #871c9c;
+}
+.btns__theme3:hover {
+  background-color: #5a3881;
+}
+
+/* Delete Theme */
+.clear__btn-theme1,
+.delete__btn-theme1 {
+  color: #ffffff;
+  background-color: #637097;
+  box-shadow: 0px 3px 1px #404e72;
+}
+.clear__btn-theme1:hover,
+.delete__btn-theme1:hover {
+  background-color: #7f8ebd;
+}
+
+.clear__btn-theme2,
+.delete__btn-theme2 {
+  color: #ffffff;
+  background-color: #377f86;
+  box-shadow: 0px 3px 1px #1b5f65;
+}
+.clear__btn-theme2:hover,
+.delete__btn-theme2:hover {
+  background-color: #48a2aa;
+}
+
+.clear__btn-theme3,
+.delete__btn-theme3 {
+  color: #ffffff;
+  background-color: #58077d;
+  box-shadow: 0px 3px 1px #bc15f4;
+}
+.clear__btn-theme3:hover,
+.delete__btn-theme3:hover {
+  background-color: #7916a7;
+}
+
+/* Equals theme */
+.equal__btn-theme1 {
+  color: #ffffff;
+  background-color: #d03f2f;
+  box-shadow: 0px 3px 1px #93261a;
+}
+.equal__btn-theme1:hover {
+  background-color: #e95140;
+}
+
+.equal__btn-theme2 {
+  color: #ffffff;
+  background-color: #ca5502;
+  box-shadow: 0px 3px 1px #893901;
+}
+.equal__btn-theme2:hover {
+  background-color: #e2701f;
+}
+
+.equal__btn-theme3 {
+  color: #1b2428;
+  background-color: #00e0d1;
+  box-shadow: 0px 3px 1px #6cf9f2;
+}
+.equal__btn-theme3:hover {
+  background-color: #23f3e5;
+}
+
+@media (width <= 530px) {
+  .container {
+    min-width: 350px;
+    margin-inline: 10px;
+  }
+}/*# sourceMappingURL=index.css.map */
